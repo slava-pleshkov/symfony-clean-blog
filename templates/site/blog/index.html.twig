@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Home' %}
+
+{% block body %}
+    {% for item in blogs %}
+        <div class="post-preview">
+            <a href="{{ item.urlname }}">
+                <h2 class="post-title">{{ item.title }}</h2>
+                <h3 class="post-subtitle">{{ item.subtitle }}</h3>
+            </a>
+            <p class="post-meta">Posted by {{ item.author }} on September 24, 2014</p>
+        </div>
+        <hr>
+    {% endfor %}
+    <ul class="pager">
+        <li class="next">
+            <a href="#">Older Posts &rarr;</a>
+        </li>
+    </ul>
+{% endblock %}
