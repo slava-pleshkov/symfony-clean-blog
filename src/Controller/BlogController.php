@@ -8,6 +8,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class BlogController extends AbstractController
 {
+	/**
+	 * Matches / exactly
+	 *
+	 * @Route("/", name="index")
+	 */
 	public function index()
 	{
 		$number = [
@@ -49,5 +54,15 @@ class BlogController extends AbstractController
 			],
 		];
 		return $this->render('site/blog/index.html.twig', ['blogs' => $number]);
+	}
+
+	/**
+	 * Matches /blog/*
+	 *
+	 * @Route("/blog/{slug}", name="blog_show")
+	 */
+	public function view($slug)
+	{
+		return new Response("Hello $slug!");
 	}
 }

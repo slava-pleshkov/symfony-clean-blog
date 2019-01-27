@@ -1,4 +1,1 @@
-index:
-    path: /
-    controller: App\Controller\BlogController::index
 
