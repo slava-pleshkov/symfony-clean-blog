@@ -26,13 +26,13 @@
     "symfony/web-link": "4.2.*",
     "symfony/webpack-encore-bundle": "^1.1",
     "symfony/web-server-bundle": "4.2.*",
-    "symfony/debug-pack": "*",
     "symfony/maker-bundle": "^1.11",
-    "symfony/profiler-pack": "*",
-    "symfony/test-pack": "*",
     "symfony/yaml": "4.2.*"
   },
   "require-dev": {
+    "symfony/test-pack": "*",
+    "symfony/debug-pack": "*",
+    "symfony/profiler-pack": "*"
   },
   "config": {
     "preferred-install": {
